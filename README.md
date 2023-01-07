@@ -52,7 +52,7 @@ main tree or given feedback for changes that would be required.
 
 ## Author
 
-Ricardo Dantas Gonçalves - [@ricardodantas](https://twitter.com/ricardodantas)
+Ricardo Dantas Gonçalves | [@ricardodantas on Twitter](https://twitter.com/ricardodantas) | [@ricardodantas on Mastodon](https://fosstodon.org/@ricardodantas)
 
 ## License
 
