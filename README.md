@@ -12,7 +12,7 @@ The Github Action will check for new Tweets every 5 minutes.
 
 ## Sponsor
 
-Help to maintain this project and become a sponsor on [Github Sponsors](https://github.com/sponsors/ricardodantas), [Ko-fi](https://ko-fi.com/ricardodantas), or [Buy Me A Coffee](https://www.buymeacoffee.com/ricardodantas)! 🎉 You can get your company logo, link & name on this file. It's also rendered on package page in npmjs.com and yarnpkg.com sites too! 🚀
+Help to maintain this project and become a sponsor on [Github Sponsors](https://github.com/sponsors/ricardodantas), [Ko-fi](https://ko-fi.com/ricardodantas), or [Buy Me A Coffee](https://www.buymeacoffee.com/ricardodantas)! 🎉 You can get your company logo, link & name on this file. 
 
 ## Contributing
 
