@@ -6,7 +6,7 @@ This is a simple Typescript script that fetches the latest tweet from a given Tw
 
 ## How to use
 
-1. (Fork this repo)[https://github.com/ricardodantas/post-tweet-to-mastodon/fork]
+1. [Fork this repo](https://github.com/ricardodantas/post-tweet-to-mastodon/fork)
 2. Add the Twitter and Mastodon [credentials](https://github.com/ricardodantas/post-tweet-to-mastodon/blob/master/src/config/credentials.ts) to the Github Action secrets
 3. Done!
 
