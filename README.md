@@ -5,14 +5,14 @@ This is a simple Typescript script that fetches the latest tweet from a given Tw
 ## How to use
 
 1. Fork this repo
-2. Add the Twitter and Mastodon [credentials](https://github.com/ricardodantas/post-tweet-to-mastodon/blob/master/src/config.ts) to the Github Action secrets
+2. Add the Twitter and Mastodon [credentials](https://github.com/ricardodantas/post-tweet-to-mastodon/blob/master/src/config/credentials.ts) to the Github Action secrets
 3. Done!
 
 The Github Action will check for new Tweets every 5 minutes.
 
 ## Sponsor
 
-Help to maintain this project and become a sponsor on [Github Sponsors](https://github.com/sponsors/ricardodantas), [Ko-fi](https://ko-fi.com/ricardodantas), or [Buy Me A Coffee](https://www.buymeacoffee.com/ricardodantas)! 🎉 You can get your company logo, link & name on this file. 
+Help to maintain this project and become a sponsor on [Github Sponsors](https://github.com/sponsors/ricardodantas), [Ko-fi](https://ko-fi.com/ricardodantas), or [Buy Me A Coffee](https://www.buymeacoffee.com/ricardodantas)! 🎉 You can get your company logo, link & name on this file.
 
 ## Contributing
 
