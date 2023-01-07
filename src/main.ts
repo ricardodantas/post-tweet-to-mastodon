@@ -7,11 +7,8 @@ dotenv.config()
 
 import {
   TWITTER_CONSUMER_KEY, TWITTER_CONSUMER_SECRET, TWITTER_ACCESS_TOKEN_KEY,
-  TWITTER_ACCESS_TOKEN_SECRET, MASTODON_URL, MASTODON_ACCESS_TOKEN
+  TWITTER_ACCESS_TOKEN_SECRET, MASTODON_URL, MASTODON_ACCESS_TOKEN, CACHE_FILE_NAME
 } from './config';
-
-
-const CACHE_FILE_NAME = 'posted_tweet.json'
 
 async function fetchLatestTweet() {
   const client = new Twit({
