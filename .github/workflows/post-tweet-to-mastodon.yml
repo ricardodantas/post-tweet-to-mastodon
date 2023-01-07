@@ -1,0 +1,32 @@
+name: Post Tweet To Mastodon
+on:
+  schedule:
+    - cron: '*/5 * * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          cache: 'pnpm'
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Download cached posted tweet
+        uses: actions/download-artifact@v3
+        with:
+          name: posted-tweet
+
+      - name: Run script
+        run: pnpm start
+
+      - uses: actions/upload-artifact@v3
+        name: Upload cached posted tweet
+        with:
+          name: posted-tweet
+          path: posted-tweet.json
