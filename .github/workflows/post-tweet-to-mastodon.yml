@@ -41,4 +41,4 @@ jobs:
         name: Upload cached posted tweet
         with:
           name: posted-tweet
-          path: posted-tweet.json
+          path: ./posted-tweet.json
