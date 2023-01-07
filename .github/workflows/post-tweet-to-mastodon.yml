@@ -2,7 +2,7 @@ name: Post Tweet To Mastodon
 on:
   workflow_dispatch:
   push:
-     branches:
+    branches:
       - master
   schedule:
     - cron: '* * * * *'
@@ -19,10 +19,6 @@ jobs:
         with:
           name: posted-tweet
           if_no_artifact_found: warn
-        # uses: actions/download-artifact@v3
-        # continue-on-error: true
-        # with:
-        #   name: posted-tweet
 
       - uses: actions/setup-node@v3
         with:

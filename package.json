@@ -1,15 +1,14 @@
 {
   "name": "twitter-mastodon-sync",
   "version": "1.0.0",
-  "description": "",
+  "description": "A simple script to post tweets from a given Twitter account to a mastodon account.",
   "main": "src/main.ts",
   "scripts": {
-    "start": "ts-node ./src/main.ts",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "ts-node ./src/main.ts"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": ["cross post", "titter to mastodon"],
+  "author": "Ricardo Dantas Gonçalves <hi@ricardo.im>",
+  "license": "MIT",
   "devDependencies": {
     "@types/node": "^18.11.18",
     "@types/twit": "^2.2.31",
