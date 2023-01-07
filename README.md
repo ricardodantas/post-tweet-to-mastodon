@@ -1,5 +1,7 @@
 # Post tweet to Mastodon
 
+[![Build](https://github.com/ricardodantas/post-tweet-to-mastodon/actions/workflows/build.yml/badge.svg)](https://github.com/ricardodantas/post-tweet-to-mastodon/actions/workflows/build.yml) [![CodeQL](https://github.com/ricardodantas/post-tweet-to-mastodon/actions/workflows/codeql.yml/badge.svg)](https://github.com/ricardodantas/post-tweet-to-mastodon/actions/workflows/codeql.yml) [![Post Tweet To Mastodon](https://github.com/ricardodantas/post-tweet-to-mastodon/actions/workflows/post-tweet-to-mastodon.yml/badge.svg)](https://github.com/ricardodantas/post-tweet-to-mastodon/actions/workflows/post-tweet-to-mastodon.yml)
+
 This is a simple Typescript script that fetches the latest tweet from a given Twitter account and post it to a Mastodon account.
 
 ## How to use
