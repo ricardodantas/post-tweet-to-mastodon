@@ -20,7 +20,7 @@ Help to maintain this project and become a sponsor on [Github Sponsors](https://
 
 - This project is powered by Node.js/Typescript and Github Actions. Check to see if you're on the Nodejs version >= 18.x.
 
-- Check out the [existing issues](<<https://github.com/ricardodantas/post-tweet-to-mastodon/issues>).
+- Check out the [existing issues](<https://github.com/ricardodantas/post-tweet-to-mastodon/issues>).
 
 In time, we'll tag issues that would make a good first pull request for new contributors. An easy way to get started helping the project is to _file an issue_. You can do that on the issues page by clicking on the green button at the right. Issues can include bugs to fix, features to add, or documentation that looks outdated.
 
