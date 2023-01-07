@@ -3,7 +3,6 @@ import { login } from 'masto';
 import * as dotenv from 'dotenv';
 import { writeFileSync, readFileSync, existsSync } from 'fs'
 import chalk from 'chalk';
-
 dotenv.config()
 
 import {
