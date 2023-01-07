@@ -1,14 +1,14 @@
 name: Post Tweet To Mastodon
 on:
+  schedule:
+    - cron: '*/5 * * * *'
   workflow_dispatch:
   push:
     branches:
       - master
-  schedule:
-    - cron: '* * * * *'
 
 jobs:
-  build:
+  post-tweet-to-mastodon:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
