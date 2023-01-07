@@ -23,6 +23,7 @@ jobs:
 
       - name: Download cached posted tweet
         uses: actions/download-artifact@v3
+        continue-on-error: true
         with:
           name: posted-tweet
 
