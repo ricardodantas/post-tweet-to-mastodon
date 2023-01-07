@@ -16,10 +16,10 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 18
-          cache: 'pnpm'
+          cache: 'yarn'
 
       - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+        run: yarn install --frozen-lockfile
 
       - name: Download cached posted tweet
         uses: actions/download-artifact@v3
@@ -27,7 +27,7 @@ jobs:
           name: posted-tweet
 
       - name: Run script
-        run: pnpm start
+        run: yarn start
 
       - uses: actions/upload-artifact@v3
         name: Upload cached posted tweet
