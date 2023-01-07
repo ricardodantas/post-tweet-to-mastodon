@@ -14,10 +14,15 @@ jobs:
       - uses: actions/checkout@v3
 
       - name: Download cached posted tweet
-        uses: actions/download-artifact@v3
-        continue-on-error: true
+        id: download-artifact
+        uses: dawidd6/action-download-artifact@v2
         with:
           name: posted-tweet
+          if_no_artifact_found: warn
+        # uses: actions/download-artifact@v3
+        # continue-on-error: true
+        # with:
+        #   name: posted-tweet
 
       - uses: actions/setup-node@v3
         with:
