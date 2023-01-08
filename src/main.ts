@@ -10,15 +10,13 @@ async function main(): Promise<void> {
   const latestPostedTweet = getLatestPostedTweetId()
   const latestFetchedTweet = await fetchLatestTweet()
   if (!latestFetchedTweet) {
-    console.log(
-      chalk.yellow('Skipping this tweet once it is a reply or a retweet.'),
-    )
+    console.log(chalk.yellow('Skipping tweet once it is a reply or a retweet.'))
     return
   }
 
   const { tweet, tweetId } = latestFetchedTweet
   if (latestPostedTweet && latestPostedTweet === tweetId) {
-    console.log(chalk.yellow('Skipping this tweet once it was already posted.'))
+    console.log(chalk.yellow('Skipping tweet once it was already posted.'))
     return
   }
   await postToMastodon(tweet)
@@ -26,5 +24,9 @@ async function main(): Promise<void> {
 }
 
 ;(async () => {
-  main()
+  try {
+    main()
+  } catch (error: any) {
+    console.error(chalk.red(error.message))
+  }
 })()

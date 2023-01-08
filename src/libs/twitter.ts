@@ -6,6 +6,7 @@ import {
   TWITTER_ACCESS_TOKEN_KEY,
   TWITTER_ACCESS_TOKEN_SECRET,
 } from '../config'
+import { isEmpty } from './validator'
 
 type FetchTweetResponse = {
   tweetId: string
@@ -24,11 +25,29 @@ function expandUrls(urls: TweetEntitiesUrls[], text: string): string {
   for (const item of urls) {
     modifiedMessage = text.replace(item.url, item.expanded_url)
   }
-  console.log(chalk.blue(`Formatted message: ${modifiedMessage}`))
   return modifiedMessage
 }
 
 export async function fetchLatestTweet(): Promise<FetchTweetResponse | void> {
+  if (isEmpty(TWITTER_CONSUMER_KEY)) {
+    throw new Error(`The TWITTER_CONSUMER_KEY is missing in your environment`)
+  }
+  if (isEmpty(TWITTER_CONSUMER_SECRET)) {
+    throw new Error(
+      `The TWITTER_CONSUMER_SECRET is missing in your environment`,
+    )
+  }
+  if (isEmpty(TWITTER_ACCESS_TOKEN_KEY)) {
+    throw new Error(
+      `The TWITTER_ACCESS_TOKEN_KEY is missing in your environment`,
+    )
+  }
+  if (isEmpty(TWITTER_ACCESS_TOKEN_SECRET)) {
+    throw new Error(
+      `The TWITTER_ACCESS_TOKEN_SECRET is missing in your environment`,
+    )
+  }
+
   const client = new Twit({
     consumer_key: TWITTER_CONSUMER_KEY,
     consumer_secret: TWITTER_CONSUMER_SECRET,
@@ -44,11 +63,9 @@ export async function fetchLatestTweet(): Promise<FetchTweetResponse | void> {
   const isRetweet = (data as any)[0].retweeted
   const inReplyToStatusId = (data as any)[0].in_reply_to_status_id
   const urls: TweetEntitiesUrls[] = (data as any)[0]?.entities?.urls
-  console.log(data)
   if (isRetweet || inReplyToStatusId) {
     return
   }
-  console.log(chalk.blue(`Tweet fetched: ${tweet}`))
   const modifiedTweet = expandUrls(urls, tweet)
   return { tweetId, tweet: modifiedTweet }
 }
