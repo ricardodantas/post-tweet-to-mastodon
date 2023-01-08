@@ -2,15 +2,21 @@
 
 [![Build](https://github.com/ricardodantas/post-tweet-to-mastodon/actions/workflows/build.yml/badge.svg)](https://github.com/ricardodantas/post-tweet-to-mastodon/actions/workflows/build.yml) [![CodeQL](https://github.com/ricardodantas/post-tweet-to-mastodon/actions/workflows/codeql.yml/badge.svg)](https://github.com/ricardodantas/post-tweet-to-mastodon/actions/workflows/codeql.yml) [![Post Tweet To Mastodon](https://github.com/ricardodantas/post-tweet-to-mastodon/actions/workflows/post-tweet-to-mastodon.yml/badge.svg)](https://github.com/ricardodantas/post-tweet-to-mastodon/actions/workflows/post-tweet-to-mastodon.yml)
 
-This is a simple Typescript script that fetches the latest tweet from a given Twitter account and post it to a Mastodon account.
+Stop worrying about sharing your Twitter and Mastodon credentials with unknown websites with this simple and safe Typescript script you can easly repost your tweets to your Mastodon account.
+
+## How it works
+
+1. The script will run every five minutes (thanks to Github Actions) and fetch the latest tweet from your account; 
+2. Then it will check if it is a retweet or a reply to someone;
+3. If the tweet is neither of those it will automaticaly post to your Mastodon account;
+4. Then it will store the id of that reposted tweet to a cache file that will be upload to the Github Actions artifact. So next time the script check for a new tweet, it will also make sure that the same tweet will not be posted again.
+
 
 ## How to use
 
 1. [Fork this repo](https://github.com/ricardodantas/post-tweet-to-mastodon/fork)
 2. Add the Twitter and Mastodon [credentials](https://github.com/ricardodantas/post-tweet-to-mastodon/blob/master/src/config/credentials.ts) to the Github Action secrets
 3. Done!
-
-The Github Action will check for new Tweets every 5 minutes.
 
 ## Sponsor
 
