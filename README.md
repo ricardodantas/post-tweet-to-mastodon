@@ -6,6 +6,8 @@ Stop worrying about sharing your Twitter and Mastodon credentials with unknown w
 
 ## How it works
 
+Once you settle the environment variables with your Mastodon and Twitter credentials:
+
 1. The script will run every five minutes (thanks to Github Actions) and fetch the latest tweet from your account; 
 2. Then it will check if it is a retweet or a reply to someone;
 3. If the tweet is neither of those it will automaticaly post to your Mastodon account;
