@@ -3422,11 +3422,6 @@ pkg-dir@^4.2.0:
   dependencies:
     find-up "^4.0.0"
 
-pocketbase@^0.9.1:
-  version "0.9.1"
-  resolved "https://registry.yarnpkg.com/pocketbase/-/pocketbase-0.9.1.tgz#5a90bc9de7404a8da78621aca1dc9ea550f32ed5"
-  integrity sha512-a9S/WHak+mgr3WI8bD2tz3lFVFzoy6ZgKTBlUXwIH4VLTKVU3JKeAKxqIFBF7av4qblmB+52tX8sWLS08Ftm/w==
-
 prelude-ls@^1.2.1:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/prelude-ls/-/prelude-ls-1.2.1.tgz#debc6489d7a6e6b0e7611888cec880337d316396"
