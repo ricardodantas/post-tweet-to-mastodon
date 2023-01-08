@@ -6,7 +6,7 @@ Stop worrying about sharing your Twitter and Mastodon credentials with unknown w
 
 ## How it works
 
-Once you settle the environment variables with your Mastodon and Twitter credentials:
+Once you settle your Mastodon and Twitter credentials on your Github Actions secret settings:
 
 1. The script will run every five minutes (thanks to Github Actions) and fetch the latest tweet from your account; 
 2. Then it will check if it is a retweet or a reply to someone;
