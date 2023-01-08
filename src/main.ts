@@ -25,8 +25,10 @@ async function main(): Promise<void> {
 
 ;(async () => {
   try {
-    main()
+    await main()
+    process.exit(0)
   } catch (error: any) {
     console.error(chalk.red(error.message))
+    process.exit(1)
   }
 })()
