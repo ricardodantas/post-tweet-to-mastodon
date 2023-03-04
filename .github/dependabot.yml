@@ -13,3 +13,5 @@ updates:
       - "npm_dependencies"
     reviewers:
       - "ricardodantas"
+    # Disable version updates for npm dependencies
+    open-pull-requests-limit: 0
