@@ -11,3 +11,5 @@ updates:
       interval: "weekly"
     labels:
       - "npm_dependencies"
+    reviewers:
+      - "ricardodantas"
