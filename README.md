@@ -1,6 +1,6 @@
 # Post tweet to Mastodon
 
-[![Build](https://github.com/ricardodantas/post-tweet-to-mastodon/actions/workflows/build.yml/badge.svg)](https://github.com/ricardodantas/post-tweet-to-mastodon/actions/workflows/build.yml) [![CodeQL](https://github.com/ricardodantas/post-tweet-to-mastodon/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/ricardodantas/post-tweet-to-mastodon/actions/workflows/github-code-scanning/codeql) [![Post Tweet To Mastodon](https://github.com/ricardodantas/post-tweet-to-mastodon/actions/workflows/post-tweet-to-mastodon.yml/badge.svg)](https://github.com/ricardodantas/post-tweet-to-mastodon/actions/workflows/post-tweet-to-mastodon.yml)
+[![Build](https://github.com/ricardodantas/post-tweet-to-mastodon/actions/workflows/build.yml/badge.svg)](https://github.com/ricardodantas/post-tweet-to-mastodon/actions/workflows/build.yml) [![CodeQL](https://github.com/ricardodantas/post-tweet-to-mastodon/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/ricardodantas/post-tweet-to-mastodon/actions/workflows/github-code-scanning/codeql)
 
 Stop worrying about sharing your Twitter and Mastodon credentials with unknown websites with this simple and safe Typescript script you can easly repost your tweets to your Mastodon account.
 
